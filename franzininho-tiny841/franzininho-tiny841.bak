@@ -1,0 +1,722 @@
+EESchema Schematic File Version 4
+LIBS:franzininho-tiny841-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Franzininho Tiny841"
+Date ""
+Rev "V0"
+Comp "Franzininho"
+Comment1 "by Fábio Souza"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny841-SSU U2
+U 1 1 5B73F80B
+P 7575 3825
+F 0 "U2" H 7045 3871 50  0000 R CNN
+F 1 "ATtiny841-SSU" H 7045 3780 50  0000 R CNN
+F 2 "SMD_Packages:SOIC-14_N" H 7575 3825 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8495-8-bit-AVR-Microcontrollers-ATtiny441-ATtiny841_Datasheet.pdf" H 7575 3825 50  0001 C CNN
+	1    7575 3825
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 5B73FA98
+P 2825 4900
+F 0 "D1" V 2779 4979 50  0000 L CNN
+F 1 "3V6" V 2870 4979 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-323_HandSoldering" H 2825 4900 50  0001 C CNN
+F 3 "~" H 2825 4900 50  0001 C CNN
+	1    2825 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B73FB90
+P 3700 4450
+F 0 "R2" V 3600 4450 50  0000 C CNN
+F 1 "68R" V 3700 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3630 4450 50  0001 C CNN
+F 3 "~" H 3700 4450 50  0001 C CNN
+	1    3700 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5B73FDE8
+P 2150 4475
+F 0 "J1" H 2205 4942 50  0000 C CNN
+F 1 "USB_B_Micro" H 2205 4851 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 2300 4425 50  0001 C CNN
+F 3 "~" H 2300 4425 50  0001 C CNN
+	1    2150 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR01
+U 1 1 5B7400D1
+P 2050 5175
+F 0 "#PWR01" H 2050 4925 50  0001 C CNN
+F 1 "GNDREF" H 2055 5002 50  0000 C CNN
+F 2 "" H 2050 5175 50  0001 C CNN
+F 3 "" H 2050 5175 50  0001 C CNN
+	1    2050 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4875 2050 5000
+Wire Wire Line
+	2150 4875 2150 5000
+Wire Wire Line
+	2150 5000 2050 5000
+Connection ~ 2050 5000
+Wire Wire Line
+	2050 5000 2050 5175
+$Comp
+L Device:R R3
+U 1 1 5B7405A0
+P 3700 4575
+F 0 "R3" V 3800 4575 50  0000 C CNN
+F 1 "68R" V 3700 4575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3630 4575 50  0001 C CNN
+F 3 "~" H 3700 4575 50  0001 C CNN
+	1    3700 4575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 4450 2825 4450
+Wire Wire Line
+	2450 4450 2450 4475
+Wire Wire Line
+	2450 4575 3275 4575
+$Comp
+L Device:D_Zener D2
+U 1 1 5B74072E
+P 3275 4900
+F 0 "D2" V 3229 4979 50  0000 L CNN
+F 1 "3V6" V 3320 4979 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-323_HandSoldering" H 3275 4900 50  0001 C CNN
+F 3 "~" H 3275 4900 50  0001 C CNN
+	1    3275 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR05
+U 1 1 5B740768
+P 2825 5200
+F 0 "#PWR05" H 2825 4950 50  0001 C CNN
+F 1 "GNDREF" H 2830 5027 50  0000 C CNN
+F 2 "" H 2825 5200 50  0001 C CNN
+F 3 "" H 2825 5200 50  0001 C CNN
+	1    2825 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR08
+U 1 1 5B74077F
+P 3275 5200
+F 0 "#PWR08" H 3275 4950 50  0001 C CNN
+F 1 "GNDREF" H 3280 5027 50  0000 C CNN
+F 2 "" H 3275 5200 50  0001 C CNN
+F 3 "" H 3275 5200 50  0001 C CNN
+	1    3275 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 5050 2825 5200
+Wire Wire Line
+	3275 5050 3275 5200
+Wire Wire Line
+	2825 4750 2825 4450
+Connection ~ 2825 4450
+Wire Wire Line
+	2825 4450 2450 4450
+Wire Wire Line
+	3275 4750 3275 4575
+Connection ~ 3275 4575
+Wire Wire Line
+	3275 4575 3550 4575
+$Comp
+L Device:R R1
+U 1 1 5B740AFC
+P 3275 4175
+F 0 "R1" H 3205 4129 50  0000 R CNN
+F 1 "1K5" H 3205 4220 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3205 4175 50  0001 C CNN
+F 3 "~" H 3275 4175 50  0001 C CNN
+	1    3275 4175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3275 4325 3275 4575
+$Comp
+L power:+5V #PWR07
+U 1 1 5B740CA8
+P 3275 3875
+F 0 "#PWR07" H 3275 3725 50  0001 C CNN
+F 1 "+5V" H 3290 4048 50  0000 C CNN
+F 2 "" H 3275 3875 50  0001 C CNN
+F 3 "" H 3275 3875 50  0001 C CNN
+	1    3275 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3275 3875 3275 4025
+$Comp
+L power:+5V #PWR016
+U 1 1 5B741517
+P 7575 2850
+F 0 "#PWR016" H 7575 2700 50  0001 C CNN
+F 1 "+5V" H 7590 3023 50  0000 C CNN
+F 2 "" H 7575 2850 50  0001 C CNN
+F 3 "" H 7575 2850 50  0001 C CNN
+	1    7575 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 2850 7575 2925
+$Comp
+L power:GNDREF #PWR017
+U 1 1 5B741750
+P 7575 4825
+F 0 "#PWR017" H 7575 4575 50  0001 C CNN
+F 1 "GNDREF" H 7580 4652 50  0000 C CNN
+F 2 "" H 7575 4825 50  0001 C CNN
+F 3 "" H 7575 4825 50  0001 C CNN
+	1    7575 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7575 4725 7575 4825
+Wire Wire Line
+	3850 4575 6575 4575
+Wire Wire Line
+	6575 4575 6575 4225
+Wire Wire Line
+	6575 4225 6975 4225
+Wire Wire Line
+	6975 4125 6500 4125
+Wire Wire Line
+	6500 4125 6500 4450
+Wire Wire Line
+	6500 4450 3850 4450
+$Comp
+L Device:LED D5
+U 1 1 5B742216
+P 5800 4900
+F 0 "D5" H 5792 4645 50  0000 C CNN
+F 1 "LED" H 5792 4736 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 5800 4900 50  0001 C CNN
+F 3 "~" H 5800 4900 50  0001 C CNN
+	1    5800 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5B7422BA
+P 5450 4900
+F 0 "R5" V 5350 4900 50  0000 C CNN
+F 1 "1K" V 5450 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5380 4900 50  0001 C CNN
+F 3 "~" H 5450 4900 50  0001 C CNN
+	1    5450 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5B7422F0
+P 5050 4850
+F 0 "#PWR013" H 5050 4700 50  0001 C CNN
+F 1 "+5V" H 5065 5023 50  0000 C CNN
+F 2 "" H 5050 4850 50  0001 C CNN
+F 3 "" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4850 5050 4900
+Wire Wire Line
+	5050 4900 5300 4900
+Wire Wire Line
+	5600 4900 5650 4900
+Wire Wire Line
+	5950 4900 6650 4900
+Wire Wire Line
+	6650 4900 6650 4325
+Wire Wire Line
+	6650 4325 6975 4325
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5B742CA6
+P 6375 5475
+F 0 "SW1" H 6375 5760 50  0000 C CNN
+F 1 "SW_Push" H 6375 5669 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3U-1000P" H 6375 5675 50  0001 C CNN
+F 3 "" H 6375 5675 50  0001 C CNN
+	1    6375 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 4425 6775 4425
+Wire Wire Line
+	6775 4425 6775 5475
+Wire Wire Line
+	6775 5475 6575 5475
+$Comp
+L power:GNDREF #PWR014
+U 1 1 5B7432D5
+P 6000 5500
+F 0 "#PWR014" H 6000 5250 50  0001 C CNN
+F 1 "GNDREF" H 6005 5327 50  0000 C CNN
+F 2 "" H 6000 5500 50  0001 C CNN
+F 3 "" H 6000 5500 50  0001 C CNN
+	1    6000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 5475 6000 5475
+Wire Wire Line
+	6000 5475 6000 5500
+$Comp
+L Device:R R6
+U 1 1 5B743746
+P 7050 5475
+F 0 "R6" V 6950 5475 50  0000 C CNN
+F 1 "1K" V 7050 5475 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6980 5475 50  0001 C CNN
+F 3 "~" H 7050 5475 50  0001 C CNN
+	1    7050 5475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 5475 6775 5475
+Connection ~ 6775 5475
+$Comp
+L power:+5V #PWR015
+U 1 1 5B743B7E
+P 7325 5400
+F 0 "#PWR015" H 7325 5250 50  0001 C CNN
+F 1 "+5V" H 7340 5573 50  0000 C CNN
+F 2 "" H 7325 5400 50  0001 C CNN
+F 3 "" H 7325 5400 50  0001 C CNN
+	1    7325 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7325 5400 7325 5475
+Wire Wire Line
+	7325 5475 7200 5475
+$Comp
+L Regulator_Linear:LP2985-5.0 U1
+U 1 1 5B7444FF
+P 3075 6650
+F 0 "U1" H 3075 6992 50  0000 C CNN
+F 1 "LP2985-5.0" H 3075 6901 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 3075 6975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 3075 6650 50  0001 C CNN
+	1    3075 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 6650 2350 6650
+Wire Wire Line
+	2350 6650 2350 6550
+Wire Wire Line
+	2350 6550 2675 6550
+$Comp
+L power:GNDREF #PWR06
+U 1 1 5B744D3D
+P 3075 7125
+F 0 "#PWR06" H 3075 6875 50  0001 C CNN
+F 1 "GNDREF" H 3080 6952 50  0000 C CNN
+F 2 "" H 3075 7125 50  0001 C CNN
+F 3 "" H 3075 7125 50  0001 C CNN
+	1    3075 7125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 6950 3075 7125
+$Comp
+L power:+5V #PWR011
+U 1 1 5B74586D
+P 4300 6325
+F 0 "#PWR011" H 4300 6175 50  0001 C CNN
+F 1 "+5V" H 4315 6498 50  0000 C CNN
+F 2 "" H 4300 6325 50  0001 C CNN
+F 3 "" H 4300 6325 50  0001 C CNN
+	1    4300 6325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6325 4300 6550
+$Comp
+L Device:D_ALT D3
+U 1 1 5B746082
+P 3750 6225
+F 0 "D3" V 3796 6146 50  0000 R CNN
+F 1 "1N4148" V 3705 6146 50  0000 R CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 3750 6225 50  0001 C CNN
+F 3 "~" H 3750 6225 50  0001 C CNN
+	1    3750 6225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 6375 3750 6550
+Wire Wire Line
+	3475 6550 3750 6550
+Connection ~ 3750 6550
+Wire Wire Line
+	3750 6550 4300 6550
+$Comp
+L power:VBUS #PWR09
+U 1 1 5B746AA8
+P 3750 5950
+F 0 "#PWR09" H 3750 5800 50  0001 C CNN
+F 1 "VBUS" H 3765 6123 50  0000 C CNN
+F 2 "" H 3750 5950 50  0001 C CNN
+F 3 "" H 3750 5950 50  0001 C CNN
+	1    3750 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5950 3750 6075
+$Comp
+L power:VBUS #PWR04
+U 1 1 5B747608
+P 2600 4050
+F 0 "#PWR04" H 2600 3900 50  0001 C CNN
+F 1 "VBUS" H 2615 4223 50  0000 C CNN
+F 2 "" H 2600 4050 50  0001 C CNN
+F 3 "" H 2600 4050 50  0001 C CNN
+	1    2600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4050 2600 4275
+Wire Wire Line
+	2600 4275 2450 4275
+$Comp
+L Device:LED D4
+U 1 1 5B74846E
+P 4300 7150
+F 0 "D4" V 4338 7033 50  0000 R CNN
+F 1 "LED" V 4247 7033 50  0000 R CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 4300 7150 50  0001 C CNN
+F 3 "~" H 4300 7150 50  0001 C CNN
+	1    4300 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5B748719
+P 4300 6775
+F 0 "R4" V 4200 6775 50  0000 C CNN
+F 1 "1K" V 4300 6775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4230 6775 50  0001 C CNN
+F 3 "~" H 4300 6775 50  0001 C CNN
+	1    4300 6775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 6625 4300 6550
+Connection ~ 4300 6550
+Wire Wire Line
+	4300 6925 4300 7000
+$Comp
+L power:GNDREF #PWR012
+U 1 1 5B74A19D
+P 4300 7375
+F 0 "#PWR012" H 4300 7125 50  0001 C CNN
+F 1 "GNDREF" H 4305 7202 50  0000 C CNN
+F 2 "" H 4300 7375 50  0001 C CNN
+F 3 "" H 4300 7375 50  0001 C CNN
+	1    4300 7375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7300 4300 7375
+$Comp
+L power:+BATT #PWR02
+U 1 1 5B74AF0C
+P 2100 6450
+F 0 "#PWR02" H 2100 6300 50  0001 C CNN
+F 1 "+BATT" H 2115 6623 50  0000 C CNN
+F 2 "" H 2100 6450 50  0001 C CNN
+F 3 "" H 2100 6450 50  0001 C CNN
+	1    2100 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6450 2100 6550
+Wire Wire Line
+	2100 6550 2350 6550
+Connection ~ 2350 6550
+$Comp
+L Device:C C1
+U 1 1 5B74C130
+P 2100 6850
+F 0 "C1" H 2215 6896 50  0000 L CNN
+F 1 "10uF" H 2215 6805 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2138 6700 50  0001 C CNN
+F 3 "~" H 2100 6850 50  0001 C CNN
+	1    2100 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6700 2100 6550
+Connection ~ 2100 6550
+$Comp
+L power:GNDREF #PWR03
+U 1 1 5B74CFA5
+P 2100 7125
+F 0 "#PWR03" H 2100 6875 50  0001 C CNN
+F 1 "GNDREF" H 2105 6952 50  0000 C CNN
+F 2 "" H 2100 7125 50  0001 C CNN
+F 3 "" H 2100 7125 50  0001 C CNN
+	1    2100 7125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 7000 2100 7125
+$Comp
+L Device:C C2
+U 1 1 5B74DC69
+P 3750 6850
+F 0 "C2" H 3865 6896 50  0000 L CNN
+F 1 "10uF" H 3865 6805 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3788 6700 50  0001 C CNN
+F 3 "~" H 3750 6850 50  0001 C CNN
+	1    3750 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6550 3750 6700
+$Comp
+L power:GNDREF #PWR010
+U 1 1 5B74EAC8
+P 3750 7125
+F 0 "#PWR010" H 3750 6875 50  0001 C CNN
+F 1 "GNDREF" H 3755 6952 50  0000 C CNN
+F 2 "" H 3750 7125 50  0001 C CNN
+F 3 "" H 3750 7125 50  0001 C CNN
+	1    3750 7125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 7000 3750 7125
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5B74FDFE
+P 4725 1850
+F 0 "J2" H 4805 1842 50  0000 L CNN
+F 1 "Conn_01x08" H 4805 1751 50  0000 L CNN
+F 2 "library:Pin_Header_Straight_1x08_Pitch2.54mm" H 4725 1850 50  0001 C CNN
+F 3 "~" H 4725 1850 50  0001 C CNN
+	1    4725 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5B74FEB8
+P 5800 1850
+F 0 "J3" H 5880 1842 50  0000 L CNN
+F 1 "Conn_01x08" H 5880 1751 50  0000 L CNN
+F 2 "library:Pin_Header_Straight_1x08_Pitch2.54mm" H 5800 1850 50  0001 C CNN
+F 3 "~" H 5800 1850 50  0001 C CNN
+	1    5800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR0101
+U 1 1 5B757F5E
+P 4200 1450
+F 0 "#PWR0101" H 4200 1300 50  0001 C CNN
+F 1 "+BATT" H 4215 1623 50  0000 C CNN
+F 2 "" H 4200 1450 50  0001 C CNN
+F 3 "" H 4200 1450 50  0001 C CNN
+	1    4200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1550 4200 1450
+Wire Wire Line
+	4200 1550 4525 1550
+Text GLabel 6875 3225 0    50   Input ~ 0
+PA0
+Text GLabel 6875 3325 0    50   Input ~ 0
+PA1
+Text GLabel 6875 3425 0    50   Input ~ 0
+PA2
+Text GLabel 6875 3525 0    50   Input ~ 0
+PA3
+Text GLabel 6875 3625 0    50   Input ~ 0
+PA4
+Text GLabel 6875 3725 0    50   Input ~ 0
+PA5
+Text GLabel 6875 3825 0    50   Input ~ 0
+PA6
+Text GLabel 6875 3925 0    50   Input ~ 0
+PA7
+Text GLabel 6350 4050 0    50   Input ~ 0
+PB0
+Text GLabel 6350 4150 0    50   Input ~ 0
+PB1
+Text GLabel 6350 4250 0    50   Input ~ 0
+PB2
+Text GLabel 6350 4350 0    50   Input ~ 0
+PB3
+Wire Wire Line
+	6350 4050 6500 4050
+Wire Wire Line
+	6500 4050 6500 4125
+Connection ~ 6500 4125
+Wire Wire Line
+	6475 4150 6475 4225
+Wire Wire Line
+	6475 4225 6575 4225
+Connection ~ 6575 4225
+Wire Wire Line
+	6450 4250 6450 4325
+Wire Wire Line
+	6450 4325 6650 4325
+Connection ~ 6650 4325
+Wire Wire Line
+	6350 4350 6425 4350
+Wire Wire Line
+	6425 4350 6425 4400
+Wire Wire Line
+	6425 4400 6775 4400
+Wire Wire Line
+	6775 4400 6775 4425
+Connection ~ 6775 4425
+Wire Wire Line
+	6875 3225 6975 3225
+Wire Wire Line
+	6875 3325 6975 3325
+Wire Wire Line
+	6975 3425 6875 3425
+Wire Wire Line
+	6975 3525 6875 3525
+Wire Wire Line
+	6975 3625 6875 3625
+Wire Wire Line
+	6875 3725 6975 3725
+Wire Wire Line
+	6975 3825 6875 3825
+Wire Wire Line
+	6975 3925 6875 3925
+Text GLabel 4425 2250 0    50   Input ~ 0
+PA5
+Wire Wire Line
+	4425 2250 4525 2250
+Text GLabel 4425 2150 0    50   Input ~ 0
+PA4
+Text GLabel 4425 2050 0    50   Input ~ 0
+PA3
+Text GLabel 4425 1950 0    50   Input ~ 0
+PA2
+Text GLabel 4425 1850 0    50   Input ~ 0
+PA1
+Text GLabel 4425 1750 0    50   Input ~ 0
+PA0
+Wire Wire Line
+	4425 1750 4525 1750
+Wire Wire Line
+	4425 1950 4525 1950
+Wire Wire Line
+	4425 1850 4525 1850
+Wire Wire Line
+	4425 2050 4525 2050
+Wire Wire Line
+	4425 2150 4525 2150
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5B77AB42
+P 3950 1675
+F 0 "#PWR0102" H 3950 1425 50  0001 C CNN
+F 1 "GNDREF" H 3955 1502 50  0000 C CNN
+F 2 "" H 3950 1675 50  0001 C CNN
+F 3 "" H 3950 1675 50  0001 C CNN
+	1    3950 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1650 3950 1675
+Wire Wire Line
+	3950 1650 4525 1650
+Text GLabel 5500 2250 0    50   Input ~ 0
+PA6
+Text GLabel 5500 2150 0    50   Input ~ 0
+PA7
+Wire Wire Line
+	5500 2150 5600 2150
+Wire Wire Line
+	5500 2250 5600 2250
+Wire Wire Line
+	6350 4250 6450 4250
+Wire Wire Line
+	6350 4150 6475 4150
+Text GLabel 5500 2050 0    50   Input ~ 0
+PB2
+Text GLabel 5500 1950 0    50   Input ~ 0
+PB3
+Text GLabel 5500 1850 0    50   Input ~ 0
+PB1
+Text GLabel 5500 1750 0    50   Input ~ 0
+PB0
+Wire Wire Line
+	5500 1750 5600 1750
+Wire Wire Line
+	5500 1850 5600 1850
+Wire Wire Line
+	5500 1950 5600 1950
+Wire Wire Line
+	5500 2050 5600 2050
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 5B7911B4
+P 5025 1675
+F 0 "#PWR0103" H 5025 1425 50  0001 C CNN
+F 1 "GNDREF" H 5030 1502 50  0000 C CNN
+F 2 "" H 5025 1675 50  0001 C CNN
+F 3 "" H 5025 1675 50  0001 C CNN
+	1    5025 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 1650 5025 1675
+$Comp
+L power:+5V #PWR0104
+U 1 1 5B79384A
+P 5050 1475
+F 0 "#PWR0104" H 5050 1325 50  0001 C CNN
+F 1 "+5V" H 5065 1648 50  0000 C CNN
+F 2 "" H 5050 1475 50  0001 C CNN
+F 3 "" H 5050 1475 50  0001 C CNN
+	1    5050 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1550 5050 1475
+Wire Wire Line
+	5050 1550 5600 1550
+Wire Wire Line
+	5025 1650 5600 1650
+$Comp
+L MCU_Microchip_ATtiny:ATtiny841-SSU U?
+U 1 1 5B79A75A
+P 9750 3750
+F 0 "U?" H 9220 3796 50  0000 R CNN
+F 1 "ATtiny841-SSU" H 9220 3705 50  0000 R CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9750 3750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8495-8-bit-AVR-Microcontrollers-ATtiny441-ATtiny841_Datasheet.pdf" H 9750 3750 50  0001 C CNN
+	1    9750 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

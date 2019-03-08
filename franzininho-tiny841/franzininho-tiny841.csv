@@ -1,0 +1,15 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"G***,G***";"GND2";2;"LOGO";;;
+2;"C1,C2";"C_0805_HandSoldering";2;"10uF";;;
+3;"D1,D2";"D_SOD-323_HandSoldering";2;"3V6";;;
+4;"D3";"D_SOD-123F";1;"1N4148";;;
+5;"R1";"R_0603_HandSoldering";1;"1K5";;;
+6;"R2,R3";"R_0603_HandSoldering";2;"68R";;;
+7;"R4,R5,R6";"R_0603_HandSoldering";3;"1K";;;
+8;"U1";"SOT-23-5_HandSoldering";1;"LP2985-5.0";;;
+9;"U2";"SOIC-14_N";1;"ATtiny841-SSU";;;
+10;"J1";"USB_Micro-B_Molex-105017-0001";1;"USB_B_Micro";;;
+11;"SW1";"SW_SPST_B3U-1000P";1;"SW_Push";;;
+12;"D4,D5";"LED_0603_HandSoldering";2;"LED";;;
+13;"J2,J3";"Pin_Header_Straight_1x08_Pitch2.54mm";2;"Conn_01x08";;;
+14;"G***";"FRANZININHO";1;"LOGO";;;
